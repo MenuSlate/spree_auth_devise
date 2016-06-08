@@ -8,8 +8,12 @@ module Spree
           paths.flatten
         end
 
+        def add_javascripts
+          append_file 'vendor/assets/javascripts/spree/frontend/all.js', "//= require spree/frontend/spree_auth\n"
+        end
+
         def generate_devise_key
-          return if ENV['TRAVIS']
+          return if ENV['CI']
           template 'config/initializers/devise.rb', 'config/initializers/devise.rb'
         end
 

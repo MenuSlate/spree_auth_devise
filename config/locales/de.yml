@@ -25,7 +25,7 @@ de:
     unlocks:
       send_instructions: In ein paar Minuten erhalten Sie eine E-Mail mit Anweisungen um Ihr Konto freizuschalten.
       unlocked: Ihr Konto wurde erfolgreich freigeschaltet.
-    user_passwords:
+    passwords:
       spree_user:
         cannot_be_blank: Ihr Passwort darf nicht leer sein.
         send_instructions: In ein paar Minuten erhalten Sie eine E-Mail mit Anweisungen um Ihr Passwort zurücksetzen.
@@ -40,7 +40,7 @@ de:
       signed_out: Erfolgreich abgemeldet.
   errors:
     messages:
-      already_confirmed: wurde berreits bestätigt
+      already_confirmed: wurde bereits bestätigt
       email_is_invalid: E-Mail-Adresse darf nicht leer sein
       not_found: nicht gefunden
       not_locked: war nicht gesperrt

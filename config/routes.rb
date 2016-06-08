@@ -27,9 +27,10 @@ Spree::Core::Engine.add_routes do
   get '/checkout/registration' => 'checkout#registration', :as => :checkout_registration
   put '/checkout/registration' => 'checkout#update_registration', :as => :update_checkout_registration
 
+  get '/account_link' => 'store#account_link'
   resource :account, :controller => 'users'
 
-  namespace :admin do
+  namespace :admin, path: Spree.admin_path do
     devise_for :spree_user,
                :class_name => 'Spree::User',
                :controllers => { :sessions => 'spree/admin/user_sessions',
